@@ -10,7 +10,7 @@ RUN chown -R myuser:myuser /usr/share/nginx/html
 RUN chown -R myuser:myuser /var/cache/nginx /var/run /etc/nginx /var/log/nginx
 
 # Copy the HTML file
-COPY todoapp.html /usr/share/nginx/html/index.html
+COPY todoapp.html /usr/share/nginx/html/todoapp.html
 
 # Switch to non-root user
 USER myuser
